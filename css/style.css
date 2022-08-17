@@ -1,0 +1,115 @@
+/* ====================== */
+/* base */
+/* ====================== */
+
+:root {
+	--font-primary: 'Montserrat', sans-serif;
+	--color-primary: #0e403d;
+	--color-secondary: #81a997;
+	--color-tirtiary: rgba(252, 252, 234, 0.53);
+	--color-text: rgb(32, 34, 39);
+	--color-red: rgb(185, 59, 48);
+	--color-green-100: rgb(129, 169, 151);
+	--color-black: #000;
+	--color-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 2rem;
+	font-family: var(--font-primary);
+	color: var(--color-text);
+	line-height: 28px;
+	font-weight: 400;
+	background-color: rgba(129, 169, 151, 0.17);
+}
+
+/* ====================== */
+/* hero */
+/* ====================== */
+.hero-bg {
+	height: 38rem;
+	width: 100%;
+	background-image: url('./../images/hero-img.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: cover;
+}
+
+.main {
+	margin: -33rem auto 0 auto;
+	background-color: rgba(129, 169, 151, 0.08);
+	padding: 0 2rem;
+	/* background: red; */
+	height: auto;
+}
+
+/* hero */
+.hero {
+	padding: 4rem 9.5rem;
+	width: 100%;
+	background: linear-gradient(45deg, #9c7566, #d1a493, #fedfcb, #fff0d6, #fedfcb, #d1a493, #9c7566);
+	position: relative;
+}
+
+.hero img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.bg-headline {
+	position: relative;
+}
+
+.headline-img {
+	position: absolute;
+	bottom: 0;
+	left: 5rem;
+	height: 2rem;
+	width: 15rem;
+}
+
+.section-3 .headline-img {
+	left: 0;
+}
+.section-4 .headline-img {
+	left: 0;
+	width: 100%;
+	bottom: -0.5rem;
+}
+
+.bottom-line {
+	position: relative;
+}
+
+/* images */
+
+.img-content {
+	width: 37.5rem;
+	object-fit: cover;
+	margin-right: -10rem;
+	transform: rotate(6deg);
+}
+
+.img-content-2 {
+	width: 37.5rem;
+	object-fit: cover;
+	margin-left: -10rem;
+	transform: rotate(6deg);
+}
