@@ -43,7 +43,7 @@ button {
 	background-color: rgba(129, 169, 151, 0.14);
 	width: 100%;
 	height: 1px;
-	margin: 2rem 0;
+	margin: 4rem 0;
 }
 
 .center {
@@ -92,6 +92,11 @@ h3 {
 	color: var(--color-text);
 	line-height: 1.3em;
 }
+h3 {
+	font-size: 2rem;
+	color: var(--color-text);
+	line-height: 1.3em;
+}
 
 h5 {
 	font-size: 12px;
@@ -111,7 +116,7 @@ h5 {
 }
 
 b {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 u {
@@ -122,12 +127,33 @@ i {
 	font-style: italic;
 }
 
+img {
+	height: 100%;
+	width: 100%;
+}
+
 .text-red {
-	color: var(--color-red);
+	color: rgb(185, 59, 48);
 }
 
 .fill-red {
-	fill: var(--color-red);
+	fill: rgb(185, 59, 48);
+}
+.color-green-200 {
+	color: rgb(140, 189, 167);
+	fill: rgb(140, 189, 167);
+}
+
+.color-green-300 {
+	color: rgb(80, 106, 94);
+}
+
+.color-green-50 {
+	color: rgb(102, 132, 118);
+}
+
+.color-green-100 {
+	color: var(--color-green-100);
 }
 
 .bg-color-tirtiary {
@@ -135,6 +161,28 @@ i {
 	padding: 2rem;
 	border-radius: 0.5rem;
 	color: var(--color-text);
+}
+
+.bg-red-100 {
+	background-color: rgb(255, 242, 241);
+	padding: 2rem;
+	border-radius: 0.5rem;
+}
+.bg-red-500 {
+	background-color: rgb(185, 59, 48);
+	padding: 2rem;
+	border-radius: 0.5rem;
+}
+.bg-green-500 {
+	background-color: rgb(140, 189, 167);
+	padding: 2rem;
+	border-radius: 0.5rem;
+}
+.bg-yellow-100 {
+	color: rgb(32, 34, 39);
+	background-color: rgba(255, 227, 0, 0.05);
+	padding: 2rem;
+	border-radius: 0.5rem;
 }
 
 .title-card {
@@ -191,8 +239,15 @@ i {
 	align-items: center;
 }
 
-.color-green-100 {
-	color: var(--color-green-100);
+.grid-start {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	align-items: start;
+}
+
+.icon {
+	height: 2rem;
+	width: 2rem;
 }
 
 /* margin y */

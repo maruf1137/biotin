@@ -67,6 +67,10 @@ body {
 }
 
 .hero img {
+	height: auto;
+}
+
+.hero img {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -79,19 +83,10 @@ body {
 
 .headline-img {
 	position: absolute;
-	bottom: 0;
-	left: 5rem;
-	height: 2rem;
-	width: 15rem;
-}
-
-.section-3 .headline-img {
-	left: 0;
-}
-.section-4 .headline-img {
-	left: 0;
-	width: 100%;
 	bottom: -0.5rem;
+	left: 0;
+	height: 2rem;
+	width: 100%;
 }
 
 .bottom-line {
@@ -100,16 +95,114 @@ body {
 
 /* images */
 
-.img-content {
+.right-img {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	align-items: center;
+}
+.left-img {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+}
+
+.right-img .img-content {
 	width: 37.5rem;
 	object-fit: cover;
 	margin-right: -10rem;
 	transform: rotate(6deg);
 }
-
-.img-content-2 {
+.left-img .img-content {
 	width: 37.5rem;
 	object-fit: cover;
 	margin-left: -10rem;
 	transform: rotate(6deg);
+}
+
+.img-12,
+.img-18 {
+	transform: rotate(-1deg) !important;
+	margin-left: -4rem !important;
+}
+.img-14 {
+	transform: rotate(-0deg) !important;
+	margin-right: 0rem !important;
+}
+
+/* section 5 */
+
+.title-card-red {
+	border-bottom: 5px solid rgb(203, 137, 132);
+	background: linear-gradient(45deg, #b93b30, #7a2d26);
+}
+
+/* section 6 */
+h2 {
+	font-size: 5rem;
+}
+
+/* section 8 */
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 4rem;
+}
+
+.cards-item {
+	background-color: var(--color-red);
+	background: linear-gradient(45deg, #b93b30, #7a2d26);
+	color: var(--color-white);
+	padding: 1.5rem;
+}
+
+.cards-item h3,
+.cards-item .text {
+	color: var(--color-white);
+}
+
+.cards-item .text {
+	font-size: 1.5rem;
+}
+
+.cards-item .icon {
+	height: 8rem;
+	width: 8rem;
+	fill: var(--color-white);
+	margin: 0;
+}
+
+.section-8 .image-area {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.section-8 .image-area .img-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotate(-1deg);
+}
+.section-8 .image-area .img-2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 20rem;
+	width: 20rem;
+}
+
+/* section 13 */
+.section-13 h2 {
+	font-size: 3.4rem;
+}
+
+.section-13 .cards-item {
+	background-color: transparent;
+	padding: 0;
+	background: linear-gradient(45deg, #b93b3000, #7a2d2600);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+.section-13 .cards-item img {
+	height: 102%;
 }
