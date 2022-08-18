@@ -150,6 +150,7 @@ img {
 
 .color-green-50 {
 	color: rgb(102, 132, 118);
+	fill: rgb(102, 132, 118);
 }
 
 .color-green-100 {
@@ -197,6 +198,7 @@ img {
 	border-radius: 2rem;
 	margin-bottom: 8rem;
 	line-height: 1.3em;
+	font-weight: 700 !important;
 }
 
 .border-dashed {
